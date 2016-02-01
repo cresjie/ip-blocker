@@ -20,7 +20,7 @@ Add the service provider to app/config/app.php for laravel 4 and config/app.php 
 ```php
  'providers' => array(
 	...
-	'Cresjie\SocialLogin\IpBlockerServiceProvider',
+	'Cresjie\IpBlocker\IpBlockerServiceProvider',
 )
 ```
 Configuration
