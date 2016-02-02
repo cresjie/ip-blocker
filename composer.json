@@ -2,6 +2,9 @@
     "name": "cresjie/ip-blocker",
     "description": "Laravel IP address blocker",
     "keywords" : ["laravel","ip","blocker","firewall","cresjie"],
+    "type"       : "laravel-package",
+    "homepage"   : "https://github.com/cresjie/ip-blocker",
+    "license"    : "MIT",
     "authors": [
         {
             "name": "Cres Jie Labasano",
