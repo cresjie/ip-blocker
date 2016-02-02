@@ -1,6 +1,7 @@
 {
     "name": "cresjie/ip-blocker",
-    "description": "",
+    "description": "Laravel IP address blocker",
+    "keywords" : ["laravel","ip","blocker","firewall","cresjie"],
     "authors": [
         {
             "name": "Cres Jie Labasano",
