@@ -12,7 +12,7 @@ Installation via Composer
 Add this to your composer.json file, in the require object:
 
 ```javascript
- "cresjie/ip-blocker": "v1.0.0.0"
+ "cresjie/ip-blocker": "v1.0.0.1"
 ```
 After that, run composer install to install the package.
 
