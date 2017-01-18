@@ -31,12 +31,15 @@ class IpBlockerServiceProvider extends ServiceProvider {
 	
 	public function boot()
 	{
-		$this->package('cresjie/ip-blocker');
-		
-		//$this->app['ip_blocker'] = $this->app->share(function($app){return new IpBlocker;});
-		App::before(function(){
-			$config = Config::get('ip-blocker::config');
+		$this->publishes([
+			__DIR__. '/../config/block-ip.php' => config_path('cresjie/block-ip.php')
+		]);
+
+		App::booted(function(){
+
+			$config = Config::get('cresjie.block-ip');
 			$ip = Request::getClientIp();
+
 
 
 			if( count($config['allow_only']) ){
@@ -46,11 +49,9 @@ class IpBlockerServiceProvider extends ServiceProvider {
 			}
 
 			if( count($config['block']) ){
-				if( !in_array($ip, $config['block']) )
+				if( in_array($ip, $config['block']) )
 					throw new IpBlockerException($config['message']);
 			}
-
-
 		});
 	}
 
