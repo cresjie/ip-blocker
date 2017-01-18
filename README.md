@@ -3,6 +3,8 @@ Laravel 5 IP Blocker
 
 Simple and easy to configure laravel ip blocker
 
+for [Laravel 4](//github.com/cresjie/ip-blocker/tree/master)
+
 ----------
 
 
